@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Instagram, MapPin, Mail, Phone, Calendar, Scissors, ChevronRight, Clock } from 'lucide-react';
 
+// The images will now be served directly from the public folder.
+// No need to import them here.
+
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -35,11 +38,11 @@ const App = () => {
     hours: "Mon - Fri: 9am - 7pm | Sat: 10am - 5pm | Sun: Closed"
   };
 
-  // Gallery images with dummy placeholders
+  // Gallery images using the imported local images
   const galleryImages = [
-    'https://placehold.co/800x600/000000/FFFFFF?text=Modern+Cut',
-    'https://placehold.co/800x600/000000/FFFFFF?text=Classic+Shave',
-    'https://placehold.co/800x600/000000/FFFFFF?text=Styled+Haircut'
+    '/assets/haircut1.jpg',
+    '/assets/haircut2.jpg',
+    '/assets/haircut3.jpg'
   ];
 
   const sections = [
@@ -99,7 +102,7 @@ const App = () => {
 
       <main>
         {/* Hero Section */}
-        <section id="hero" className="relative h-screen flex items-center justify-center text-center px-4 py-20 bg-cover bg-center" style={{ backgroundImage: "url('https://placehold.co/1920x1080/1a202c/F0F0F0?text=Hero+Image')" }}>
+        <section id="hero" className="relative h-screen flex items-center justify-center text-center px-4 py-20 bg-cover bg-center" style={{ backgroundImage: "url('/assets/hero-image.jpg')" }}>
           <div className="absolute inset-0 bg-gray-900 opacity-60"></div>
           <div className="relative z-10 max-w-2xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight mb-4 text-white">
