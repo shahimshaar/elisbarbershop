@@ -27,20 +27,24 @@ const App = () => {
   }, [favicon]); // Re-run effect if favicon changes
 
   // Dummy data for the site
-  const barbershopName = "Eli's Barbershop of Galesburg";
+  const barbershopName = "Eli's Barbershop";
   const dummyInfo = {
-    address: '247 E. Main Street, Galesburg IL 61401',
-    phone: '(309) 349-0244',
+    address: '123 Main Street, Anytown, USA 12345',
+    phone: '(555) 123-4567',
     email: 'hello@elisbarbershop.com',
-    instagram: 'elis_barbershop_galesburg',
+    instagram: 'elisbarbershop',
     bookingLink: 'https://booksy.com/en-us/1132493_elis-barbershop-of-galesburg_barber-shop_18668_galesburg?hl=en-US&gei=IYGfaK7kArqjptQPvo_i6Qg&rwg_token=ACgRB3cAikIcuGtwuba1VPgaXGAuE6P2vh6yvZ5NLM4adziAkfqt_ZwTDY8PH51SN_hpqEeZw6_p21y0EyL7Ox9dBJ7hLtX_5A%3D%3D#ba_s=seo',
-    mapsIframe: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3574.661973693211!2d-90.36914912357736!3d40.947616523157265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87e1bff45c4f2b95%3A0x38d7ab8b683946df!2sEli%E2%80%99s%20Barbershop%20of%20Galesburg!5e1!3m2!1sen!2sus!4v1755289741736!5m2!1sen!2sus',
-    hours: "Tues: 12pm - 6pm | Wed thru Sat: 9am - 6pm | Sun & Mon: Closed"}
+    mapsIframe: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2818619934444!2d-73.98774848459424!3d40.74844047932822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25968bb03b715%3A0x6b49e0c1f2f0b73c!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1628183184643!5m2!1sen!2sus',
+    hours: "Mon - Fri: 9am - 7pm | Sat: 10am - 5pm | Sun: Closed"
+  };
+
+  const publicUrl = typeof process !== 'undefined' && process.env.PUBLIC_URL ? process.env.PUBLIC_URL : '';
+
   // Gallery images using the imported local images
   const galleryImages = [
-    '/public/assets/haircut1.jpg',
-    '/public/assets/haircut2.jpg',
-    '/public/assets/haircut3.jpg'
+    `${publicUrl}/assets/haircut1.jpg`,
+    `${publicUrl}/assets/haircut2.jpg`,
+    `${publicUrl}/assets/haircut3.jpg`
   ];
 
   const sections = [
@@ -100,11 +104,11 @@ const App = () => {
 
       <main>
         {/* Hero Section */}
-        <section id="hero" className="relative h-screen flex items-center justify-center text-center px-4 py-20 bg-cover bg-center" style={{ backgroundImage: `url('public/assets/hero-image.jpg')` }}>
+        <section id="hero" className="relative h-screen flex items-center justify-center text-center px-4 py-20 bg-cover bg-center" style={{ backgroundImage: `url('${publicUrl}/assets/hero-image.jpg')` }}>
           <div className="absolute inset-0 bg-gray-900 opacity-60"></div>
           <div className="relative z-10 max-w-2xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight mb-4 text-white">
-              The Art of the Cut.
+              Classic Cuts Tailored for You.
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8">
               Experience a blend of classic techniques and modern styles. Our commitment is to give you a look that defines you.
