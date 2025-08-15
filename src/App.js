@@ -29,13 +29,12 @@ const App = () => {
   // Dummy data for the site
   const barbershopName = "Eli's Barbershop";
   const dummyInfo = {
-    address: '123 Main Street, Anytown, USA 12345',
-    phone: '(555) 123-4567',
+    address: '247 E. Main Street, Galesburg IL 61401',
+    phone: '(309) 349-0244',
     email: 'hello@elisbarbershop.com',
-    instagram: 'elisbarbershop',
+    instagram: 'elis_barbershop_galesburg',
     bookingLink: 'https://booksy.com/en-us/1132493_elis-barbershop-of-galesburg_barber-shop_18668_galesburg?hl=en-US&gei=IYGfaK7kArqjptQPvo_i6Qg&rwg_token=ACgRB3cAikIcuGtwuba1VPgaXGAuE6P2vh6yvZ5NLM4adziAkfqt_ZwTDY8PH51SN_hpqEeZw6_p21y0EyL7Ox9dBJ7hLtX_5A%3D%3D#ba_s=seo',
-    mapsIframe: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2818619934444!2d-73.98774848459424!3d40.74844047932822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25968bb03b715%3A0x6b49e0c1f2f0b73c!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1628183184643!5m2!1sen!2sus',
-    hours: "Mon - Fri: 9am - 7pm | Sat: 10am - 5pm | Sun: Closed"
+    mapsIframe: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3574.661973693211!2d-90.36914912357736!3d40.947616523157265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87e1bff45c4f2b95%3A0x38d7ab8b683946df!2sEli%E2%80%99s%20Barbershop%20of%20Galesburg!5e1!3m2!1sen!2sus!4v1755289741736!5m2!1sen!2sus',    hours: "Mon - Fri: 9am - 7pm | Sat: 10am - 5pm | Sun: Closed"
   };
 
   const publicUrl = typeof process !== 'undefined' && process.env.PUBLIC_URL ? process.env.PUBLIC_URL : '';
