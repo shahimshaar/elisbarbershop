@@ -40,15 +40,15 @@ const App = () => {
 
   // Gallery images using the imported local images
   const galleryImages = [
-    'elisbarbershop/assets/haircut1.jpg',
-    '/assets/haircut2.jpg',
-    '/assets/haircut3.jpg'
+    'assets/haircut1.jpg',
+    'assets/haircut2.jpg',
+    'assets/haircut3.jpg'
   ];
 
   const sections = [
     { id: 'hero', name: 'Home' },
     { id: 'gallery', name: 'Gallery' },
-    { id: 'booking', name: 'Booking' },
+    { id: 'booking', 'name': 'Booking' },
     { id: 'contact', name: 'Contact' }
   ];
 
@@ -102,7 +102,7 @@ const App = () => {
 
       <main>
         {/* Hero Section */}
-        <section id="hero" className="relative h-screen flex items-center justify-center text-center px-4 py-20 bg-cover bg-center" style={{ backgroundImage: `url('/assets/hero-image.jpg')` }}>
+        <section id="hero" className="relative h-screen flex items-center justify-center text-center px-4 py-20 bg-cover bg-center" style={{ backgroundImage: `url('assets/hero-image.jpg')` }}>
           <div className="absolute inset-0 bg-gray-900 opacity-60"></div>
           <div className="relative z-10 max-w-2xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight mb-4 text-white">
