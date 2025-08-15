@@ -40,7 +40,7 @@ const App = () => {
 
   // Gallery images using the imported local images
   const galleryImages = [
-    '/assets/haircut1.jpg',
+    'elisbarbershop/assets/haircut1.jpg',
     '/assets/haircut2.jpg',
     '/assets/haircut3.jpg'
   ];
