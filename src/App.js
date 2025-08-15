@@ -38,11 +38,15 @@ const App = () => {
     hours: "Mon - Fri: 9am - 7pm | Sat: 10am - 5pm | Sun: Closed"
   };
 
-  // Gallery images using the imported local images
+  // The process.env.PUBLIC_URL is the correct way to handle paths for create-react-app.
+  // It will be an empty string in dev, and the base path (e.g., /my-app) in production.
+  const publicUrl = process.env.PUBLIC_URL;
+
+  // Gallery images using the public URL
   const galleryImages = [
-    'assets/haircut1.jpg',
-    'assets/haircut2.jpg',
-    'assets/haircut3.jpg'
+    `${publicUrl}/assets/haircut1.jpg`,
+    `${publicUrl}/assets/haircut2.jpg`,
+    `${publicUrl}/assets/haircut3.jpg`
   ];
 
   const sections = [
@@ -102,7 +106,7 @@ const App = () => {
 
       <main>
         {/* Hero Section */}
-        <section id="hero" className="relative h-screen flex items-center justify-center text-center px-4 py-20 bg-cover bg-center" style={{ backgroundImage: `url('assets/hero-image.jpg')` }}>
+        <section id="hero" className="relative h-screen flex items-center justify-center text-center px-4 py-20 bg-cover bg-center" style={{ backgroundImage: `url('${publicUrl}/assets/hero-image.jpg')` }}>
           <div className="absolute inset-0 bg-gray-900 opacity-60"></div>
           <div className="relative z-10 max-w-2xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight mb-4 text-white">
