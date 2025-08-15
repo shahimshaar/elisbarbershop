@@ -29,7 +29,7 @@ const App = () => {
   // Dummy data for the site
   const barbershopName = "Eli's Barbershop";
   const dummyInfo = {
-    address: '123 Main Street, Galesburg, IL 61401',
+    address: '123 Main Street, Anytown, USA 12345',
     phone: '(555) 123-4567',
     email: 'hello@elisbarbershop.com',
     instagram: 'elisbarbershop',
@@ -102,7 +102,7 @@ const App = () => {
 
       <main>
         {/* Hero Section */}
-        <section id="hero" className="relative h-screen flex items-center justify-center text-center px-4 py-20 bg-cover bg-center" style={{ backgroundImage: "url('/assets/hero-image.jpg')" }}>
+        <section id="hero" className="relative h-screen flex items-center justify-center text-center px-4 py-20 bg-cover bg-center" style={{ backgroundImage: `url('/assets/hero-image.jpg')` }}>
           <div className="absolute inset-0 bg-gray-900 opacity-60"></div>
           <div className="relative z-10 max-w-2xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight mb-4 text-white">
