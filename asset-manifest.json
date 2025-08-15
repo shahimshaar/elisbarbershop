@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/elisbarbershop/static/js/main.16e35a9e.js",
+    "main.js": "/elisbarbershop/static/js/main.c27d7708.js",
     "index.html": "/elisbarbershop/index.html",
-    "main.16e35a9e.js.map": "/elisbarbershop/static/js/main.16e35a9e.js.map"
+    "main.c27d7708.js.map": "/elisbarbershop/static/js/main.c27d7708.js.map"
   },
   "entrypoints": [
-    "static/js/main.16e35a9e.js"
+    "static/js/main.c27d7708.js"
   ]
 }
