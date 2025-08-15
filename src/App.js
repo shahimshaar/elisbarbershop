@@ -29,7 +29,7 @@ const App = () => {
   // Dummy data for the site
   const barbershopName = "Eli's Barbershop";
   const dummyInfo = {
-    address: '123 Main Street, Anytown, USA 12345',
+    address: '123 Main Street, Galesburg, IL 61401',
     phone: '(555) 123-4567',
     email: 'hello@elisbarbershop.com',
     instagram: 'elisbarbershop',
