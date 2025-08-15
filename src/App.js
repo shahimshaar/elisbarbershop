@@ -112,7 +112,7 @@ const App = () => {
           <div className="absolute inset-0 bg-gray-900 opacity-60"></div>
           <div className="relative z-10 max-w-2xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight mb-4 text-white">
-              The Art of the Cut.
+              Classic, Custom Cuts.
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8">
               Experience a blend of classic techniques and modern styles. Our commitment is to give you a look that defines you.
