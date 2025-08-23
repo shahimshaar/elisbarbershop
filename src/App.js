@@ -11,7 +11,7 @@ const App = () => {
   const favicon = "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✂️</text></svg>";
   
   // Use a useEffect hook to safely manipulate the document head after component renders
-  useEffect(() => {
+//  useEffect(() => {
     // This code block is no longer needed since browsers automatically look for favicon.ico in the public folder.
     // let link = document.head.querySelector('link[rel="icon"]');
     // if (!link) {
@@ -22,10 +22,10 @@ const App = () => {
     // link.href = favicon;
     
     // Cleanup function (optional for a single-page app, but good practice)
-    return () => {
+  //  return () => {
       // document.head.removeChild(link);
-    };
-  }, [favicon]); // Re-run effect if favicon changes
+    //};
+  //}, [favicon]); // Re-run effect if favicon changes
 
   // Dummy data for the site
   const barbershopName = "Eli's Barbershop of Galesburg";
